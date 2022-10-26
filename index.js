@@ -98,3 +98,23 @@ app.get('/buildversion', function(req, res, next) {
 		commit: process.env.COMMIT_TAG,
 	});
 });
+
+//how to use in node
+
+//const set_options_for_pdf_generator = function(html_source) {
+//	const regex = new RegExp(ACCOUNT_APP_URL, 'g');
+//	return {
+//		method: 'POST',
+//		url: `http://localhost:${PDFGEN_PORT}`,
+//		headers: {
+//			'content-type': 'text/html',
+//		},
+//		body: html_source.replace(regex, PDFGEN_URL),
+//	};
+//};
+
+//res.setHeader('Content-type', 'application/pdf');
+//res.setHeader('Content-disposition', `attachment; filename=${data.filename}`);
+//const options = set_options_for_pdf_generator(data.html);
+//request(options)
+//    .pipe(res);
